@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "WormHunt": {
+    "Wormhunt": {
       "commandName": "Project",
       "launchBrowser": true,
       "applicationUrl": "https://localhost:7283;http://localhost:5283",

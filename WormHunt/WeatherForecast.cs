@@ -1,4 +1,4 @@
-namespace WormHunt
+namespace Wormhunt
 {
     public class WeatherForecast
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace WormHunt.Controllers
+namespace Wormhunt.Controllers
 {
     [ApiController]
     [Route("[controller]")]
