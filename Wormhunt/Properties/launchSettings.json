@@ -4,14 +4,14 @@
     "anonymousAuthentication": true,
     "iisExpress": {
       "applicationUrl": "http://localhost:62035",
-      "sslPort": 44393
+      "sslPort": 3000
     }
   },
   "profiles": {
     "Wormhunt": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:7283;http://localhost:5283",
+      "applicationUrl": "https://localhost:2000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy"
