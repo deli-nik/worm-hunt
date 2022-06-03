@@ -41,6 +41,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Wormhunt.Core\Wormhunt.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <TypeScriptCompile Include="client-app\src\aspnetcore-https.ts" />
     <TypeScriptCompile Include="client-app\src\aspnetcore-react.ts" />
   </ItemGroup>

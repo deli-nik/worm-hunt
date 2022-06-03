@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Wormhunt.Core.Models;
 
 namespace Wormhunt.Controllers
 {
-    [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class WeatherForecastController : BaseController
     {
         private static readonly string[] Summaries = new[]
         {
@@ -18,6 +18,10 @@ namespace Wormhunt.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// Some docs <see cref="WeatherForecast"/>
+        /// </summary>
+        /// <response code="200">RETURN SHIT</response>
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {

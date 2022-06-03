@@ -1,4 +1,4 @@
-namespace Wormhunt
+namespace Wormhunt.Core.Models
 {
     public class WeatherForecast
     {

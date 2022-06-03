@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wormhunt", "Wormhunt\Wormhunt.csproj", "{74B14F59-D494-4378-B1D8-A9BCF9AEF1BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wormhunt.Core", "Wormhunt.Core\Wormhunt.Core.csproj", "{8F4C51EE-2515-41D6-B6D5-88CF4D1E65BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{74B14F59-D494-4378-B1D8-A9BCF9AEF1BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74B14F59-D494-4378-B1D8-A9BCF9AEF1BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74B14F59-D494-4378-B1D8-A9BCF9AEF1BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F4C51EE-2515-41D6-B6D5-88CF4D1E65BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F4C51EE-2515-41D6-B6D5-88CF4D1E65BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F4C51EE-2515-41D6-B6D5-88CF4D1E65BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F4C51EE-2515-41D6-B6D5-88CF4D1E65BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
