@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Wormhunt.Core.Models;
+using Wormhunt.Core.Services.Hunting;
 
 namespace Wormhunt.Controllers
 {
@@ -12,10 +13,12 @@ namespace Wormhunt.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        private readonly IHuntingService _huntingService;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IHuntingService huntingService)
         {
             _logger = logger;
+            _huntingService = huntingService;
         }
 
         /// <summary>
@@ -25,6 +28,8 @@ namespace Wormhunt.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            _huntingService.Hunt(null);
+
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
