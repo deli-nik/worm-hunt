@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Wormhunt.Core.Models.Enums;
+using Wormhunt.Core.Models.Locations;
 
 namespace Wormhunt.Core.Models
 {
@@ -14,7 +16,7 @@ namespace Wormhunt.Core.Models
 
         public TrapConfiguration TrapConfiguration { get; set; }
 
-        public Location Location { get; set; }
+        public ILocation Location { get; set; }
 
         public LocationState LocationState { get; set; }
     }

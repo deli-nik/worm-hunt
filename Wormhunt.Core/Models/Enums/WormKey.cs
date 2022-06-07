@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wormhunt.Core.Models
+namespace Wormhunt.Core.Models.Enums
 {
-    public class Location
+    public enum WormKey
     {
-        public int Id { get; set; }
-
-        public string Name { get; set; }
+        PinkWorm,
+        BrownWorm,
+        ShortWorm,
+        LongWorm,
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Wormhunt.Core.Models;
+using Wormhunt.Core.Services;
 using Wormhunt.Core.Services.Hunting;
 
 namespace Wormhunt.Controllers
@@ -28,13 +29,13 @@ namespace Wormhunt.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
-            _huntingService.Hunt(null);
+            var result = _huntingService.Hunt(MockDataProvider.GetHunter());
 
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+                Summary = result,
             })
             .ToArray();
         }

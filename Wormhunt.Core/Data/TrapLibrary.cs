@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Wormhunt.Core.Models;
+using Wormhunt.Core.Models.Enums;
 
 namespace Wormhunt.Core.Data
 {

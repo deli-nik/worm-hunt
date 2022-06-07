@@ -4,6 +4,6 @@ namespace Wormhunt.Core.Services.Hunting
 {
     public interface IHuntingService
     {
-        void Hunt(Hunter hunter);
+        string Hunt(Hunter hunter);
     }
 }

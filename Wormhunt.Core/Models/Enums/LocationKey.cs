@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wormhunt.Core.Models
+namespace Wormhunt.Core.Models.Enums
 {
-    public enum TrapType
+    public enum LocationKey
     {
-        Physical,
-        Arcane,
+        KingsBackyard,
     }
 }

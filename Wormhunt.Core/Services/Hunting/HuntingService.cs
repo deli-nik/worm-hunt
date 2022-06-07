@@ -16,9 +16,18 @@ namespace Wormhunt.Core.Services.Hunting
             _wormAttractionStrategy = wormAttractionStrategy;
         }
 
-        public void Hunt(Hunter hunter)
+        public string Hunt(Hunter hunter)
         {
             var result = _wormAttractionStrategy.Attract(hunter);
+
+            if (!result.IsSuccessful)
+            {
+                return "You failed to catch a worm. Sorry, noob.";
+            }
+            else
+            {
+                return $"You successfully caught {result.CaughtWorm.Name}!";
+            }
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.OpenApi.Models;
 using System.Reflection;
+using Wormhunt.Core.Services;
 using Wormhunt.Core.Services.Hunting;
 
 namespace Wormhunt
@@ -17,7 +18,8 @@ namespace Wormhunt
         {
             builder.Services
                 .AddScoped<IHuntingService, HuntingService>()
-                .AddScoped<IWormAttractionStrategy, RandomWormAttractionStrategy>();
+                .AddScoped<IWormAttractionStrategy, RandomWormAttractionStrategy>()
+                .AddSingleton<IEntityManager, EntityManager>();
         }
 
         public static void Bootstrap(WebApplication app)
